@@ -121,3 +121,33 @@ x = y = 25 - 10 - 5;
 console.log(x, y);
 
 */
+// Coding challenge 1
+// store mass and height of Mark and John in variables
+let massMark;
+let massJohn;
+let heightMark;
+let heightJohn;
+
+//assign test data 1
+massMark = 78;
+massJohn = 92;
+heightMark = 1.69;
+heightJohn = 1.95;
+
+// // assign test data 2
+// massMark = 95;
+// massJohn = 85;
+// heightMark = 1.88;
+// heightJohn = 1.76;
+
+// calculate the BMI
+
+let bMIMark = massMark / heightMark ** 2;
+console.log(bMIMark);
+let bmiJohn = massJohn / heightJohn ** 2;
+console.log(bmiJohn);
+
+// create a boolean variable
+
+let markHigherBmi = bMIMark > bmiJohn;
+console.log(markHigherBmi);
