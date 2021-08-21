@@ -239,4 +239,53 @@ if (bMIMark > bmiJohn) {
 
 // let markHigherBmi = bMIMark > bmiJohn;
 // console.log(markHigherBmi);
+
+//type conversion
+const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+console.log(String(23));
+
+//type coercion
+console.log("I'm " + 23 + " years old. ");
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+console.log("23" * "2");
+console.log("23" > "18");
+
+//guess the outcome
+let n = "1" + 1;
+n = n - 1;
+
+console.log(n);
 */
+// 5 falsy values
+0, "", undefined, null, NaN;
+
+//everything else is truthy
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+
+// Js will tru to convert money into a boolean
+const money = -1000;
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log("You should get a job");
+}
+
+// check if variable is declared
+
+let height = 0;
+if (height) {
+  console.log("Yay defined");
+} else {
+  console.log("meh, height is UNDEFINED");
+}
