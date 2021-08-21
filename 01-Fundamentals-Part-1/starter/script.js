@@ -120,7 +120,7 @@ let x, y;
 x = y = 25 - 10 - 5;
 console.log(x, y);
 
-*/
+
 // Coding challenge 1
 // store mass and height of Mark and John in variables
 let massMark;
@@ -151,3 +151,92 @@ console.log(bmiJohn);
 
 let markHigherBmi = bMIMark > bmiJohn;
 console.log(markHigherBmi);
+
+const firstName = "Jonas";
+const job = "teacher";
+const birthyear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthyear) + " year old " + job + " .";
+console.log(jonas);
+// template literals `` are easy for multiple line strings
+const jonasNew = `I'm ${firstName}`;
+console.log(jonasNew);
+
+
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log("Sarah can start driving license 🤓");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young, wait another ${yearsLeft} years 💡`);
+}
+
+const birthYear = 1991;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
+
+
+// Coding Challenge 2:
+
+// Coding challenge 1
+// store mass and height of Mark and John in variables
+let massMark;
+let massJohn;
+let heightMark;
+let heightJohn;
+
+//assign test data 1
+massMark = 78;
+massJohn = 92;
+heightMark = 1.69;
+heightJohn = 1.95;
+
+// // assign test data 2
+// massMark = 95;
+// massJohn = 85;
+// heightMark = 1.88;
+// heightJohn = 1.76;
+
+// calculate the BMI
+
+let bMIMark = massMark / heightMark ** 2;
+console.log(bMIMark);
+let bmiJohn = massJohn / heightJohn ** 2;
+console.log(bmiJohn);
+
+if (bMIMark > bmiJohn) {
+  console.log(`Mark's BMI is higher than John's!`);
+} else {
+  console(`John's BMI is higher than Mark's!`);
+}
+//Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!
+if (bMIMark > bmiJohn) {
+  console.log(`Mark's BMI is higher than John's!`);
+} else {
+  console(`John's BMI is higher than Mark's!`);
+}
+
+//Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!
+
+if (bMIMark > bmiJohn) {
+  console.log(`Mark's BMI (${bMIMark}) is higher than John's (${bmiJohn})!`);
+} else {
+  console(`John's BMI (${bmiJohn}) is higher than Mark's (${bMIMark})!`);
+}
+
+// create a boolean variable
+
+// let markHigherBmi = bMIMark > bmiJohn;
+// console.log(markHigherBmi);
+*/
