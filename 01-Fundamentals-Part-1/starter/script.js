@@ -257,12 +257,12 @@ console.log("23" + "10" + 3);
 console.log("23" * "2");
 console.log("23" > "18");
 
-//guess the outcome
+guess the outcome
 let n = "1" + 1;
 n = n - 1;
 
 console.log(n);
-*/
+
 // 5 falsy values
 0, "", undefined, null, NaN;
 
@@ -289,3 +289,137 @@ if (height) {
 } else {
   console.log("meh, height is UNDEFINED");
 }
+
+// const age = 18;
+// if (age === 18) console.log("You just became an adult");
+
+const favourite = Number(prompt("What's your favorite number?"));
+console.log(favourite);
+if (favourite === 23) {
+  console.log("yay cool!");
+}
+
+if (favourite !== 23) console.log("Why not 23??");
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+
+const isTired = false; //C
+console.log(hasGoodVision || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive");
+}
+
+
+//coding challenge 3
+// Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+// Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+// Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+
+// Calculate the average score for each team, using the test data below
+//Test data 1
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+const averageScoreKoalas = (88 + 91 + 110) / 3;
+console.log(averageScoreDolphins, averageScoreKoalas);
+
+// // Test data 2
+
+// const averageScoreDolphins = (97 + 112 + 101) / 3;
+// const averageScoreKoalas = (109 + 95 + 123) / 3;
+// console.log(averageScoreDolphins, averageScoreKoalas);
+
+// // Test data 3
+// const averageScoreDolphins = (97 + 112 + 101) / 3;
+// const averageScoreKoalas = (109 + 95 + 106) / 3;
+// console.log(averageScoreDolphins, averageScoreKoalas);
+
+// // Compare the team's average scores
+// if (averageScoreDolphins > averageScoreKoalas) {
+//   console.log("🐬 won");
+// } else if (averageScoreDolphins === averageScoreKoalas) {
+//   console.log("it's a draw");
+//   0;
+// } else {
+//   console.log("🐨 won");
+// }
+
+//bonus 1 and bonus 2
+
+if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100) {
+  console.log("🐬 won");
+} else if (
+  averageScoreDolphins > averageScoreKoalas &&
+  averageScoreDolphins < 100
+) {
+  console.log("Koalas win");
+} else if (
+  averageScoreDolphins === averageScoreKoalas &&
+  averageScoreDolphins >= 100
+) {
+  console.log("it's a draw- both win");
+  0;
+} else {
+  console.log("no one wins");
+}
+
+// yay made it!
+
+
+const day = "wednesday";
+
+// switch (day) {
+//   case "monday":
+//     console.log("Plan course structure");
+//     console.log("Go to coding meetup");
+//   //break;
+//   case "tuesday":
+//     console.log("tidy up all files");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("create content");
+//     break;
+//   case "friday":
+//     console.log("review");
+//     break;
+//   default:
+//     console.log("not a valid day");
+// }
+
+if (day === "monday") {
+  console.log("monday activity");
+} else if (day === "tuesday" || day === "wednesday") {
+  console.log("midweek activity");
+} else if (day === "thursday") {
+  console.log("thursday activity");
+} else {
+  console.log("weeeekend");
+}
+*/
+
+//ternary operator
+
+const age = 23;
+age >= 18
+  ? console.log("I like to drink wine")
+  : console.log("I like to drink wine");
+
+const drink = age >= 18 ? "wine" : "water";
+
+console.log(`I would like to drink ${age >= 18 ? "wine" : "water"}`);
