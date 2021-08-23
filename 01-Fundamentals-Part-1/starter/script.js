@@ -411,8 +411,6 @@ if (day === "monday") {
 } else {
   console.log("weeeekend");
 }
-*/
-
 //ternary operator
 
 const age = 23;
@@ -423,3 +421,24 @@ age >= 18
 const drink = age >= 18 ? "wine" : "water";
 
 console.log(`I would like to drink ${age >= 18 ? "wine" : "water"}`);
+
+
+// coding challenge 4
+
+// Calculate the tip, depending on the bill value. Create a variable called 'tip' for
+// this. It's not allowed to use an if/else statement � (If it's easier for you, you can
+// start with an if/else statement, and then try to convert it to a ternary
+// operator!)
+
+// Data 1: Test for bill values 275, 40 and 430
+
+const bill = 275;
+bill >= 50 && bill <= 300 ? (tip = bill * 0.15) : (tip = bill * 0.2);
+console.log(
+  `the bill was ${bill}, the calculated tip was ${tip} and the total value is ${
+    bill + tip
+  }`
+);
+
+// yay, made it
+*/
