@@ -98,3 +98,37 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1991, "Luise"));
 console.log(yearsUntilRetirement(1970, "Max"));
 */
+
+// coding challenge 1 - part 2;
+
+//create an arrow function
+
+const DolphinScore1 = 124;
+const DolphinScore2 = 23;
+const DolphinScore3 = 71;
+
+const KoalaScore1 = 65;
+const KoalaScore2 = 54;
+const KoalaScore3 = 49;
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(DolphinScore1, DolphinScore2, DolphinScore3));
+//call the function for both teams
+const koalaScore = calcAverage(KoalaScore1, KoalaScore2, KoalaScore3);
+const dolphinScore = calcAverage(DolphinScore1, DolphinScore2, DolphinScore3);
+//output the scores to the console
+console.log(dolphinScore, koalaScore);
+//Create a function 'checkWinner' that takes the average score of each team
+//as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+//to the console, together with the victory points, according to the rule above
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`🐬 win!(${avgDolphins} vs. ${avgDolphins})`);
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log(`🐨 win (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log(`no one wins 💥`);
+  }
+};
+//call the function
+checkWinner(koalaScore, dolphinScore);
