@@ -132,7 +132,7 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 //call the function
 checkWinner(koalaScore, dolphinScore);
-*/
+
 
 //arrays
 
@@ -180,3 +180,26 @@ const ages = [
   calcAge1(years[years.length - 1]),
 ];
 console.log(ages);
+
+
+
+const friends = ["Michael", "Steven", "Peter"];
+
+//add element to the end
+friends.push("Jay ");
+console.log(friends);
+//add elements to the beginning
+friends.unshift("John");
+// remove last element
+friends.pop;
+friends.shift;
+console.log(friends);
+//removes first element from array
+friends.shift();
+console.log(friends);
+friends.shift();
+console.log(friends);
+console.log(friends.indexOf("Steven"));
+
+console.log(friends.includes("Bob"));
+*/
