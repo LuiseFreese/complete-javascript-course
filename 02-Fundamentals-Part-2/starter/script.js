@@ -203,3 +203,34 @@ console.log(friends.indexOf("Steven"));
 
 console.log(friends.includes("Bob"));
 */
+
+//coding challenge
+
+// Steven is still building his tip calculator, using the same rules as before: Tip 15% of
+// the bill if the bill value is between 50 and 300, and if the value is different, the tip is
+// 20%.
+
+// Data 1: Test for bill values 275, 40 and 430
+
+// const bill = 275;
+// bill >= 50 && bill <= 300 ? (tip = bill * 0.15) : (tip = bill * 0.2);
+// console.log(
+//   `the bill was ${bill}, the calculated tip was ${tip} and the total value is ${
+//     bill + tip
+//   }`
+// );
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+calcTip(275);
+
+const bills = [125, 555, 44];
+// const tips = [calcTip(125), calcTip(555), calcTip(44)];
+//or
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const total = [125 + calcTip(125), 555 + calcTip(555), 44 + calcTip(44)];
+//or
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(tips, totals);
