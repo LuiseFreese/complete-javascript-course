@@ -202,7 +202,7 @@ console.log(friends);
 console.log(friends.indexOf("Steven"));
 
 console.log(friends.includes("Bob"));
-*/
+
 
 //coding challenge
 
@@ -234,3 +234,38 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(tips, totals);
+*/
+// objects
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+);
+
+console.log(interestedIn);
+
+console.log(jonas[interestedIn]);
+
+// challenge write "Jonas has 3 friends, and his best friends is called Michael"
+// find jonas, 3 and Michael
+console.log(
+  jonas.firstName +
+    " has " +
+    jonas.friends.length +
+    " friends, and his best friend is called " +
+    jonas.friends[0]
+);
