@@ -344,7 +344,7 @@ console.log(jonas.age);
 // Challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license"
 console.log(jonas.getSummary());
-*/
+
 // challenge #3
 //1. For each of them, create an object with properties for their full name, mass, and
 // height (Mark Miller and John Smith
@@ -390,4 +390,76 @@ if (john.bmi < mark.bmi) {
       mark.fullName
     }'s ${mark.calcBMI()}`
   );
+}
+*/
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+//loop over an array
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+// console.log(jonas[0])
+// console.log(jonas[1])
+// console.log(jonas[2])
+// console.log(jonas[3])
+// console.log(jonas[4])
+//jonas[5] does not exist
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(jonas[i]);
+// }
+
+// now replace the hardcoded value of the length of the array with a dynamic one
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i]);
+// }
+// //create an array with a for loop
+
+// const types = []; // create an empty array
+
+// //now l
+// for (let i = 0; i < jonas.length; i++) {
+//   //reading the array
+//   console.log(jonas[i]);
+//   // filling types Array
+
+//   types[i] = typeof jonas[i];
+// }
+// //logging filled array to the console
+// console.log(types);
+
+// // // yet another example
+
+// const years = [1991, 2007, 1069, 2020];
+
+// // we want to calculate the ages for these birthYears and store them in an array
+
+// // first create an empty array
+
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+//continue and break
+// console.log('---ONLY STRINGS---')
+// for (let i = 0; i < jonas.length; i++) {
+//   //we only want to print to console elements that are strings.
+//   if (typeof jonas[i] !== "string") continue;
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+console.log("---BREAK WITH NUMBER---");
+for (let i = 0; i < jonas.length; i++) {
+  //we only want to print to console elements until we found a number
+  if (typeof jonas[i] === "number") break;
+  console.log(jonas[i], typeof jonas[i]);
 }
