@@ -391,19 +391,19 @@ if (john.bmi < mark.bmi) {
     }'s ${mark.calcBMI()}`
   );
 }
-*/
+
 // for (let rep = 1; rep <= 10; rep++) {
 //   console.log(`Lifting weights repetition ${rep}`);
 // }
 
 //loop over an array
-const jonas = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-];
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
 
 // console.log(jonas[0])
 // console.log(jonas[1])
@@ -463,3 +463,44 @@ for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] === "number") break;
   console.log(jonas[i], typeof jonas[i]);
 }
+
+// loop backwards over an array
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+// outer loop
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------starting exercise ${exercise}`);
+}
+
+// inner loop
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`--- Lifting weights ${rep} in set ${exercise}---`);
+  }
+}
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice == 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("loop is about to end");
+}
+*/
