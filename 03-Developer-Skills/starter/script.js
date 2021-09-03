@@ -59,7 +59,7 @@ for (let i = 0; i < temperatures.length; i++) {
   //   const amplitude = maxValue - minValue;
   //   console.log(amplitude);
 }
-*/
+
 
 // 1) Understanding the problem
 // - What is temp amplitude? Answer: difference between highest and lowest temp
@@ -156,7 +156,7 @@ const calcTempAmplitudeBug = function (t1, t2) {
   for (let i = 0; i < temperatures.length; i++) {
     const curTemp = temps[i];
     if (typeof curTemp !== 'number') continue;
-
+    debugger;
     if (curTemp > max) max = curTemp;
     if (curTemp < min) min = curTemp;
   }
@@ -165,3 +165,34 @@ const calcTempAmplitudeBug = function (t1, t2) {
 };
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
+
+// 1. transform the array to a string
+// myTemps = [17, 21, 23];
+// const printForeCast = function (myTemps) {};
+// printForeCast([17, 21, 23]);
+// console.log();
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+// console.log(`... ${data1[0]}C ... ${data1[1]}C... ${data1[2]}C`);
+
+const printForeCast = function (arr) {
+  let str = '';
+  for (let i = 0; i < data1.length; i++) {
+    str = str + `${arr[i]}C in ${i + 1} days ... `;
+  }
+  console.log(`...` + str);
+};
+printForeCast(data1);
+
+//this would be hard coded.
+
+//how long is the array? answer: data1.length
+
+// we could loop over the length of the array 💡
+
+// for (let i = 0; i <= data1.length; i++) {
+//   let ourText = `data1[i]+`;
+// }
+*/
