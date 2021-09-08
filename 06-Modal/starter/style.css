@@ -10,15 +10,15 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  color: #333;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #d53369;
   line-height: 1.5;
   height: 100vh;
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #d53369, #cbad6d);
 }
 
 .show-modal {
@@ -27,10 +27,11 @@ body {
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
   border: none;
-  background-color: #fff;
-  color: #444;
-  border-radius: 10rem;
-  cursor: pointer;
+  background-color: #e4dbca;
+  color: #d53369;
+  border-radius: 0.5rem;
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🧁</text></svg>"),
+    auto;
 }
 
 .close-modal {
@@ -38,7 +39,7 @@ body {
   top: 1.2rem;
   right: 2rem;
   font-size: 5rem;
-  color: #333;
+  color: #d53369;
   cursor: pointer;
   border: none;
   background: none;
@@ -66,10 +67,10 @@ p {
   transform: translate(-50%, -50%);
   width: 70%;
 
-  background-color: white;
+  background-color: #e4dbca;
   padding: 6rem;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 5rem rgba(255, 110, 231, 0.123);
   z-index: 10;
 }
 
