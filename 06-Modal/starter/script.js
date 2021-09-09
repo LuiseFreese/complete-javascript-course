@@ -21,12 +21,18 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 
 overlay.addEventListener('click', closeModal);
 btnCloseModal.addEventListener('click', closeModal);
-// btnCloseModal.addEventListener('click', function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// });
-// don't repeat yourself, instead of doing this:
-// overlay.addEventListener('click', function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// });
+
+document.addEventListener('keydown', function (e) {
+  // console.log('a key was pressed');
+  console.log(`${e.key} was pressed`);
+
+  // if (e.key === 'Escape') {
+  //   if (!modal.classList.contains('hidden')) {
+  //     closeModal();
+  //   }
+  // }
+  //refactored
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});

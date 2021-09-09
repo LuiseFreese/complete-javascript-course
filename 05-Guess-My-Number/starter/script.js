@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
           : '😭 meh - number too low, try again'
       );
       score = score - 1;
-      document.querySelector('.score').textContent = score;
+       = score;
     } else {
       displayMessage('Game over');
       document.querySelector('score').textContent = 0;
