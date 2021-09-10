@@ -16,10 +16,19 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #fc354c 0%, #0abfbc 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.name {
+  font-family: 'Monoton', cursive;
+  color: #0abfbc;
+}
+
+.current-score {
+  color: #0abfbc;
 }
 
 /* LAYOUT */
@@ -164,4 +173,8 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  display: none;
 }
