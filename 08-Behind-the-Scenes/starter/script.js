@@ -75,16 +75,22 @@ const addArrow = (a, b) => a + b;
 
 //copying objects
 
+// const jessica = {
+//   firstName: 'Jessica',
+//   lastName: 'Williams',
+//   age: 27,
+// };
+
+// const jessicaCopy = Object.assign({}, jessica);
+// jessicaCopy.lastName = 'Davis';
+
 const jessica = {
   firstName: 'Jessica',
   lastName: 'Williams',
   age: 27,
 };
 
-// const jessicaCopy = Object.assign({}, jessica);
-// jessicaCopy.lastName = 'Davis';
-
-const jessicaCopy = Object.assign(jessica, { lastName: 'Davis' });
+const jessicaCopy = { ...jessica, lastName: 'Davis' };
 
 console.log('this is Jessica Original: ', jessica);
 console.log('this is Jessica Copy: ', jessicaCopy);
